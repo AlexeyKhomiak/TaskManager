@@ -1,0 +1,90 @@
+﻿<Window x:Class="TaskManager2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager2"
+        Title="MainWindow" Height="450" Width="400">
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox ItemsSource="{Binding Processes}"
+                 SelectedItem="{Binding CurrentProcess, UpdateSourceTrigger=PropertyChanged}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Id}" Width="50"/>
+                        <TextBlock Text="{Binding ProcessName}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <DockPanel Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock>Id</TextBlock>
+                <TextBlock Grid.Column="1" 
+                           Text="{Binding CurrentProcess.Id}">
+                </TextBlock>
+
+                <TextBlock Grid.Row="1">ProcessName</TextBlock>
+                <TextBlock Grid.Row="1" 
+                           Grid.Column="1" 
+                           Text="{Binding CurrentProcess.ProcessName}">
+                </TextBlock>
+
+                <TextBlock Grid.Row="2">StartTime</TextBlock>
+                <TextBlock Grid.Row="2" 
+                           Grid.Column="1" 
+                           Text="{Binding CurrentProcess.StartTime}">
+                </TextBlock>
+
+                <TextBlock Grid.Row="3">TotalProcessorTime</TextBlock>
+                <TextBlock Grid.Row="3" 
+                           Grid.Column="1" 
+                           Text="{Binding CurrentProcess.TotalProcessorTime}">
+                </TextBlock>
+
+                <TextBlock Grid.Row="4">PagedMemorySize64</TextBlock>
+                <TextBlock Grid.Row="4" 
+                           Grid.Column="1" 
+                           Text="{Binding CurrentProcess.PagedMemorySize64}">
+                </TextBlock>
+
+                <TextBlock Grid.Row="5">BasePriority</TextBlock>
+                <TextBlock Grid.Row="5" 
+                           Grid.Column="1" 
+                           Text="{Binding CurrentProcess.BasePriority}">
+                </TextBlock>
+                
+            </Grid>
+        </DockPanel>
+        <DockPanel Grid.Row="2">
+        <Button Width="200"
+                Command="{Binding StopProcess}">
+            Stop Process</Button>
+
+        <Button
+                Command="{Binding RefreshProcess}">
+            Refresh Process</Button>
+        </DockPanel>
+    </Grid>
+</Window>

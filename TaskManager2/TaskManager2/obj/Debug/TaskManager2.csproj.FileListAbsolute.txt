@@ -1,0 +1,15 @@
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\bin\Debug\TaskManager2.exe.config
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\bin\Debug\TaskManager2.exe
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\bin\Debug\TaskManager2.pdb
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\TaskManager2.csprojResolveAssemblyReference.cache
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\MainWindow.g.cs
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\App.g.cs
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\TaskManager2_MarkupCompile.cache
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\TaskManager2_MarkupCompile.lref
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\MainWindow.baml
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\TaskManager2.g.resources
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\TaskManager2.Properties.Resources.resources
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\TaskManager2.csproj.GenerateResource.Cache
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\TaskManager2.exe
+G:\ALL\PROGRAMING\SP (sys prog)\DZ1\TaskManager2\TaskManager2\obj\Debug\TaskManager2.pdb
