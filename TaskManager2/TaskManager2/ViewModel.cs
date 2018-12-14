@@ -30,6 +30,7 @@ namespace TaskManager2
             StopProcess = new RelayCommand(x =>
             {
                 CurrentProcess.CloseMainWindow();
+                CurrentProcess.Kill();
                 Processes.Remove(CurrentProcess);
                 foreach (var i in Process.GetProcesses())
                     {
@@ -39,6 +40,7 @@ namespace TaskManager2
 
             RefreshProcess = new RelayCommand(x =>
             {
+                Processes.Clear();
                 foreach (var i in Process.GetProcesses())
                 {
                     Processes.Add(i);
